@@ -8,7 +8,7 @@ import { useState } from 'react'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-   const  [open, setOpne] = useState(false)
+   const  [open, setOpen] = useState(false)
    console.log("resultou", open)
   return (
     <>
@@ -21,9 +21,9 @@ export default function Home() {
       <main className={`${styles.main} ${inter.className}`}>
         <div>
            <h2>Clique no botão</h2>
-           <button onClick={()=>setOpne(!open)} >Clique em min</button>          
+           <button onClick={()=>setOpen(!open)} >Clique em min</button>          
         </div>
-        <Modal isOpen={open} />
+        <Modal isOpen={open} setOpen={setOpen} />
 
       </main>
     </>
