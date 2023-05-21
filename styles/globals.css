@@ -111,4 +111,6 @@ a {
   position: fixed;
   background: #6e1818;
   padding: 12px;
+  width: 700px;
+  text-align: center;
 }
